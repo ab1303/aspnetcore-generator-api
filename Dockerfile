@@ -15,7 +15,6 @@ RUN dotnet restore tests/tests.csproj
 COPY . . 
 
 # test
-# For better integration of test reporting with team city
 ENV TEAMCITY_PROJECT_NAME=fake
 RUN dotnet test tests/tests.csproj
 
