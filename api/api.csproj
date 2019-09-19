@@ -4,7 +4,10 @@
     <UserSecretsId>aspnet-api-7C2DEA3B-3FE0-4E9C-A3C6-809300076350</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Faker.Net" Version="1.0.3" />
